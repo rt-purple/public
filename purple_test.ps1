@@ -15,7 +15,7 @@ Set-Content -Path $scriptPath -Value $popupScript -Force
 Write-Host "Script créé : $scriptPath"
 
 # 2. Création d’un schedule task (souvent utilisé par des malwares)
-$scriptPath = "$env:TEMP\purple_test.ps1"
+$scriptPath = "$env:TEMP\purple_test2.ps1"
 $taskTrigger = New-ScheduledTaskTrigger -Daily -At 10:00am
 $taskAction = New-ScheduledTaskAction -Execute "PowerShell" -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$scriptPath`""
 Register-ScheduledTask -TaskName "PurpleTests Tasks" -Action $taskAction -Trigger $taskTrigger
